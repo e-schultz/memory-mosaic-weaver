@@ -51,7 +51,7 @@ const RealityFilter: React.FC<FilterProps> = ({
               <span>Reality Verification</span>
               <span>{progress}%</span>
             </div>
-            <Progress value={progress} className="h-2 bg-psyche-medium" indicatorClassName="bg-psyche-accent" />
+            <Progress value={progress} className="h-2 bg-psyche-medium" />
           </div>
           
           <div className="mt-4 p-4 bg-psyche-medium/30 rounded-md border border-psyche-accent/20">

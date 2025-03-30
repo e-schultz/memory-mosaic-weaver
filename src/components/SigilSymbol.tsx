@@ -5,11 +5,16 @@ import { cn } from "@/lib/utils";
 interface SigilSymbolProps {
   symbol: string;
   className?: string;
+  ariaLabel?: string;
 }
 
-const SigilSymbol: React.FC<SigilSymbolProps> = ({ symbol, className }) => {
+const SigilSymbol: React.FC<SigilSymbolProps> = ({ symbol, className, ariaLabel }) => {
   return (
-    <span className={cn("sigil", className)}>
+    <span 
+      className={cn("sigil", className)}
+      role="img" 
+      aria-label={ariaLabel || `Sigil symbol ${symbol}`}
+    >
       {symbol}
     </span>
   );

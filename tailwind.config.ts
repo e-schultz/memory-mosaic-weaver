@@ -63,13 +63,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				psyche: {
-					dark: '#0F172A',
-					medium: '#1E293B',
-					light: '#334155',
-					accent: '#F43F5E',
-					mute: '#64748B',
-					gold: '#F59E0B',
-					ivory: '#F8FAFC'
+					dark: '#0A0E1A',
+					medium: '#151F30',
+					light: '#2A3950',
+					accent: '#FF385C',
+					mute: '#8899BB',
+					gold: '#FFB627',
+					ivory: '#FFFFFF'
 				}
 			},
 			borderRadius: {

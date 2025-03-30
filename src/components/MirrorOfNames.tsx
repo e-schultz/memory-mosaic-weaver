@@ -32,53 +32,53 @@ const MirrorOfNames: React.FC<MirrorOfNamesProps> = ({
 }) => {
   return (
     <div className={cn("space-y-6", className)}>
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6 gradient-text">Mirror of Names</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Mirror of Names</h2>
       
       <Card className="mirror-card">
-        <div className="text-center mb-6">
-          <h3 className="text-xl font-bold">Base Identity</h3>
-          <p className="text-2xl mt-2 text-psyche-ivory">{baseName}</p>
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold mb-2">Base Identity</h3>
+          <p className="text-3xl text-psyche-ivory font-semibold">{baseName}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="text-center p-3 border border-psyche-mute/30 rounded-md bg-psyche-dark/50">
-            <h4 className="text-psyche-accent flex items-center justify-center">
+          <div className="text-center p-4 border-2 border-psyche-mute/40 rounded-md bg-psyche-dark/70">
+            <h4 className="text-xl text-psyche-accent flex items-center justify-center font-bold">
               <SigilSymbol symbol="⟁" /> Inversion
             </h4>
-            <p className="mt-2 text-lg">{inversion.name}</p>
+            <p className="mt-3 text-xl font-medium">{inversion.name}</p>
             {inversion.qualities && (
-              <p className="text-xs mt-1 text-psyche-ivory/60 italic">{inversion.qualities}</p>
+              <p className="text-sm mt-2 text-psyche-mute italic">{inversion.qualities}</p>
             )}
           </div>
           
-          <div className="text-center p-3 border border-psyche-mute/30 rounded-md bg-psyche-dark/50">
-            <h4 className="text-psyche-accent flex items-center justify-center">
+          <div className="text-center p-4 border-2 border-psyche-mute/40 rounded-md bg-psyche-dark/70">
+            <h4 className="text-xl text-psyche-accent flex items-center justify-center font-bold">
               <SigilSymbol symbol="⊗" /> Contradiction
             </h4>
-            <p className="mt-2 text-lg">{contradiction.name}</p>
+            <p className="mt-3 text-xl font-medium">{contradiction.name}</p>
             {contradiction.qualities && (
-              <p className="text-xs mt-1 text-psyche-ivory/60 italic">{contradiction.qualities}</p>
+              <p className="text-sm mt-2 text-psyche-mute italic">{contradiction.qualities}</p>
             )}
           </div>
           
-          <div className="text-center p-3 border border-psyche-mute/30 rounded-md bg-psyche-dark/50">
-            <h4 className="text-psyche-accent flex items-center justify-center">
+          <div className="text-center p-4 border-2 border-psyche-mute/40 rounded-md bg-psyche-dark/70">
+            <h4 className="text-xl text-psyche-accent flex items-center justify-center font-bold">
               <SigilSymbol symbol="⇝" /> Evolution
             </h4>
-            <p className="mt-2 text-lg">{evolution.name}</p>
+            <p className="mt-3 text-xl font-medium">{evolution.name}</p>
             {evolution.qualities && (
-              <p className="text-xs mt-1 text-psyche-ivory/60 italic">{evolution.qualities}</p>
+              <p className="text-sm mt-2 text-psyche-mute italic">{evolution.qualities}</p>
             )}
           </div>
         </div>
         
-        <div className="mt-6 p-3 border border-psyche-mute/30 rounded-md bg-psyche-dark/50">
-          <h4 className="text-center text-psyche-accent mb-2">2025 Identity Services</h4>
-          <div className="flex flex-wrap justify-center gap-2">
+        <div className="mt-8 p-4 border-2 border-psyche-mute/40 rounded-md bg-psyche-dark/70">
+          <h4 className="text-center text-xl text-psyche-accent font-bold mb-3">2025 Identity Services</h4>
+          <div className="flex flex-wrap justify-center gap-3">
             {all2025.renderedAs.map((service, index) => (
               <span 
                 key={index} 
-                className="px-3 py-1 rounded-full text-xs bg-psyche-medium text-psyche-accent border border-psyche-accent/20"
+                className="px-4 py-2 rounded-full text-base bg-psyche-light text-psyche-accent border-2 border-psyche-accent/30 font-bold"
               >
                 {service.identityService}
               </span>

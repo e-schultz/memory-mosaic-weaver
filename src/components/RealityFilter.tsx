@@ -27,36 +27,36 @@ const RealityFilter: React.FC<FilterProps> = ({
 
   return (
     <div className={cn("space-y-6", className)}>
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6 gradient-text">Reality Filter</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Reality Filter</h2>
       
       <Card className="doctrine-card">
-        <div className="flex items-center mb-4">
-          <SigilSymbol symbol="⌁" className="text-2xl" />
-          <h3 className="text-xl font-semibold ml-2">Filter Configuration</h3>
+        <div className="flex items-center mb-5">
+          <SigilSymbol symbol="⌁" className="text-3xl" />
+          <h3 className="text-2xl font-bold ml-2">Filter Configuration</h3>
         </div>
         
-        <div className="space-y-4">
-          <div className="border-l-2 border-psyche-mute pl-4">
-            <span className="text-sm text-psyche-accent block mb-1">Applied To</span>
-            <p className="text-base">{appliedTo}</p>
+        <div className="space-y-5">
+          <div className="border-l-4 border-psyche-accent pl-4">
+            <span className="text-lg text-psyche-accent font-bold block mb-2">Applied To</span>
+            <p className="text-xl">{appliedTo}</p>
           </div>
           
-          <div className="border-l-2 border-psyche-mute pl-4">
-            <span className="text-sm text-psyche-accent block mb-1">Function</span>
-            <p className="text-base">{filterFunction}</p>
+          <div className="border-l-4 border-psyche-accent pl-4">
+            <span className="text-lg text-psyche-accent font-bold block mb-2">Function</span>
+            <p className="text-xl">{filterFunction}</p>
           </div>
           
           <div className="mt-6">
-            <div className="flex justify-between text-sm mb-1">
-              <span>Reality Verification</span>
-              <span>{progress}%</span>
+            <div className="flex justify-between text-lg mb-2">
+              <span className="font-bold">Reality Verification</span>
+              <span className="font-bold">{progress}%</span>
             </div>
-            <Progress value={progress} className="h-2 bg-psyche-medium" />
+            <Progress value={progress} className="h-3 bg-psyche-medium" />
           </div>
           
-          <div className="mt-4 p-4 bg-psyche-medium/30 rounded-md border border-psyche-accent/20">
-            <span className="text-sm text-psyche-accent block mb-1">Result</span>
-            <p className="text-base font-semibold">{result}</p>
+          <div className="mt-5 p-5 bg-psyche-light/40 rounded-md border-2 border-psyche-accent/30">
+            <span className="text-lg text-psyche-accent font-bold block mb-2">Result</span>
+            <p className="text-xl font-bold">{result}</p>
           </div>
         </div>
       </Card>

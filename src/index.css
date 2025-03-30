@@ -92,15 +92,16 @@
   }
 
   body {
-    @apply bg-psyche-dark text-psyche-ivory/90;
+    @apply bg-psyche-dark text-psyche-ivory;
     font-family: 'Space Mono', monospace;
+    font-size: 16px;
     line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-psyche-ivory;
+    @apply text-psyche-ivory font-bold;
     font-family: 'Cormorant Garamond', serif;
-    line-height: 1.3;
+    line-height: 1.2;
     letter-spacing: 0.02em;
   }
   
@@ -111,7 +112,7 @@
 
 @layer components {
   .sigil {
-    @apply inline-block text-psyche-accent text-xl font-bold mx-1;
+    @apply inline-block text-psyche-accent text-2xl font-bold mx-1;
   }
 
   .prose-ritual {
@@ -119,16 +120,16 @@
   }
 
   .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-psyche-accent to-psyche-gold animate-text-shimmer bg-[length:200%_auto];
-    text-shadow: 0 0 3px rgba(244, 63, 94, 0.3);
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-psyche-accent to-psyche-gold animate-text-shimmer bg-[length:200%_auto] font-bold;
+    text-shadow: 0 0 5px rgba(255, 56, 92, 0.5);
   }
 
   .doctrine-card {
-    @apply border border-psyche-mute/50 p-6 rounded-md bg-gradient-to-br from-psyche-dark to-psyche-medium shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply border-2 border-psyche-mute/30 p-6 rounded-md bg-gradient-to-br from-psyche-dark to-psyche-medium shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
   .mirror-card {
-    @apply backdrop-blur-sm bg-psyche-medium/80 border border-psyche-accent/30 rounded-md p-4 animate-pulse-slow;
+    @apply backdrop-blur-sm bg-psyche-medium/90 border-2 border-psyche-accent/40 rounded-md p-4 animate-pulse-slow;
   }
 
   .noise-overlay {
@@ -138,7 +139,7 @@
     width: 100%;
     height: 100%;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.05;
+    opacity: 0.03;
     pointer-events: none;
     z-index: 100;
   }

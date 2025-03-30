@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,7 +95,7 @@
   body {
     @apply bg-psyche-dark text-psyche-ivory;
     font-family: 'Space Mono', monospace;
-    font-size: 16px;
+    font-size: 18px;  /* Increased from 16px */
     line-height: 1.6;
   }
 
@@ -107,6 +108,7 @@
   
   p {
     margin-bottom: 1em;
+    @apply font-medium;  /* Added font-medium to all paragraphs */
   }
 }
 
@@ -121,15 +123,15 @@
 
   .gradient-text {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-psyche-accent to-psyche-gold animate-text-shimmer bg-[length:200%_auto] font-bold;
-    text-shadow: 0 0 5px rgba(255, 56, 92, 0.5);
+    text-shadow: 0 0 8px rgba(255, 56, 92, 0.7);  /* Increased glow effect */
   }
 
   .doctrine-card {
-    @apply border-2 border-psyche-mute/30 p-6 rounded-md bg-gradient-to-br from-psyche-dark to-psyche-medium shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply border-2 border-psyche-accent/50 p-6 rounded-md bg-gradient-to-br from-psyche-dark to-psyche-medium shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
   .mirror-card {
-    @apply backdrop-blur-sm bg-psyche-medium/90 border-2 border-psyche-accent/40 rounded-md p-4 animate-pulse-slow;
+    @apply backdrop-blur-sm bg-psyche-medium/90 border-2 border-psyche-accent/60 rounded-md p-4 animate-pulse-slow;
   }
 
   .noise-overlay {

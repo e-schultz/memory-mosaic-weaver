@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,8 +68,8 @@ export default {
 					medium: '#151F30',
 					light: '#2A3950',
 					accent: '#FF385C',
-					mute: '#8899BB',
-					gold: '#FFB627',
+					mute: '#B8C7E0',  // Lightened from previous value
+					gold: '#FFD700',  // Brighter gold
 					ivory: '#FFFFFF'
 				}
 			},
@@ -126,19 +127,19 @@ export default {
 						color: 'inherit',
 						a: {
 							color: 'inherit',
-							opacity: 0.75,
-							fontWeight: '500',
+							opacity: 0.9,  // Increased from 0.75
+							fontWeight: '600',  // Increased from 500
 							textDecoration: 'underline',
 							'&:hover': {
 								opacity: 1,
-								color: '#e94560',
+								color: '#FF385C',
 							},
 						},
 						'[class~="lead"]': {
 							color: 'inherit',
 						},
 						code: {
-							color: '#e94560',
+							color: '#FF385C',
 						},
 						'blockquote p:first-of-type::before': { content: 'none' },
 						'blockquote p:last-of-type::after': { content: 'none' },

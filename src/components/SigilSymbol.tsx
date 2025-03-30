@@ -11,7 +11,10 @@ interface SigilSymbolProps {
 const SigilSymbol: React.FC<SigilSymbolProps> = ({ symbol, className, ariaLabel }) => {
   return (
     <span 
-      className={cn("sigil inline-block text-psyche-accent text-2xl font-bold mx-2 drop-shadow-sm", className)}
+      className={cn(
+        "sigil inline-block text-psyche-gold text-2xl font-bold mx-2 drop-shadow-sm", 
+        className
+      )}
       role="img" 
       aria-label={ariaLabel || `Sigil symbol ${symbol}`}
     >
@@ -21,3 +24,4 @@ const SigilSymbol: React.FC<SigilSymbolProps> = ({ symbol, className, ariaLabel 
 };
 
 export default SigilSymbol;
+

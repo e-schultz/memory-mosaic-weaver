@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,15 +62,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for our memory system
 				psyche: {
-					dark: '#1a1a2e',
-					medium: '#16213e',
-					light: '#0f3460',
-					accent: '#e94560',
-					mute: '#533e6c',
-					gold: '#d4af37',
-					ivory: '#fffff0'
+					dark: '#0F172A',
+					medium: '#1E293B',
+					light: '#334155',
+					accent: '#F43F5E',
+					mute: '#64748B',
+					gold: '#F59E0B',
+					ivory: '#F8FAFC'
 				}
 			},
 			borderRadius: {

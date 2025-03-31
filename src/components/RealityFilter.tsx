@@ -36,14 +36,14 @@ const RealityFilter: React.FC<FilterProps> = ({
         </div>
         
         <div className="space-y-6">
-          <div className="border-l-4 border-psyche-accent pl-6 py-2">
-            <span className="text-xl text-psyche-accent font-bold block mb-2">Applied To</span>
-            <p className="text-2xl font-bold text-psyche-ivory">{appliedTo}</p>
+          <div className="border-l-4 border-accent pl-6 py-2">
+            <span className="text-xl text-accent font-bold block mb-2">Applied To</span>
+            <p className="text-2xl font-bold text-foreground">{appliedTo}</p>
           </div>
           
-          <div className="border-l-4 border-psyche-accent pl-6 py-2">
-            <span className="text-xl text-psyche-accent font-bold block mb-2">Function</span>
-            <p className="text-2xl font-bold text-psyche-ivory">{filterFunction}</p>
+          <div className="border-l-4 border-accent pl-6 py-2">
+            <span className="text-xl text-accent font-bold block mb-2">Function</span>
+            <p className="text-2xl font-bold text-foreground">{filterFunction}</p>
           </div>
           
           <div className="mt-8">
@@ -51,12 +51,12 @@ const RealityFilter: React.FC<FilterProps> = ({
               <span className="font-bold">Reality Verification</span>
               <span className="font-bold text-psyche-gold">{progress}%</span>
             </div>
-            <Progress value={progress} className="h-4 bg-psyche-medium" />
+            <Progress value={progress} className="h-4 bg-muted" />
           </div>
           
-          <div className="mt-6 p-6 bg-psyche-light/50 rounded-md border-2 border-psyche-accent/50">
-            <span className="text-xl text-psyche-accent font-bold block mb-2">Result</span>
-            <p className="text-2xl font-bold text-psyche-ivory">{result}</p>
+          <div className="mt-6 p-6 bg-muted/50 rounded-md border-2 border-accent/50">
+            <span className="text-xl text-accent font-bold block mb-2">Result</span>
+            <p className="text-2xl font-bold text-foreground">{result}</p>
           </div>
         </div>
       </Card>

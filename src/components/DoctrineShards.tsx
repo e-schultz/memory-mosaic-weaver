@@ -24,7 +24,7 @@ const DoctrineShards: React.FC<DoctrineSharedsProps> = ({ nodes, className }) =>
         {nodes.map((node, index) => (
           <Card 
             key={index} 
-            className="doctrine-card group hover:translate-y-[-5px] focus-within:ring-2 focus-within:ring-psyche-accent p-6"
+            className="doctrine-card group hover:translate-y-[-5px] focus-within:ring-2 focus-within:ring-accent p-6"
             tabIndex={0}
             role="article"
             aria-labelledby={`doctrine-title-${index}`}
@@ -37,7 +37,7 @@ const DoctrineShards: React.FC<DoctrineSharedsProps> = ({ nodes, className }) =>
               />
               <h3 id={`doctrine-title-${index}`} className="text-xl font-semibold">{node.key.split('.').join(' · ')}</h3>
             </div>
-            <p className="text-base text-psyche-ivory/90 leading-relaxed">{node.description}</p>
+            <p className="text-base text-foreground/90 leading-relaxed">{node.description}</p>
           </Card>
         ))}
       </div>

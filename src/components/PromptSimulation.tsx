@@ -29,7 +29,7 @@ const PromptSimulation: React.FC<PromptSimulationProps> = ({
   return (
     <Card className={cn("doctrine-card overflow-hidden transition-all duration-500 mb-8", className)}>
       <div 
-        className="cursor-pointer hover:text-psyche-accent transition-colors"
+        className="cursor-pointer hover:text-accent transition-colors"
         onClick={() => setExpanded(!expanded)}
       >
         <div className="flex justify-between items-center">
@@ -37,9 +37,9 @@ const PromptSimulation: React.FC<PromptSimulationProps> = ({
             <SigilSymbol symbol="⌬" className="text-xl" /> 
             <span>{id.substring(0, 8)}</span>
           </h3>
-          <span className="text-sm px-3 py-1 rounded-md bg-psyche-accent/20 text-psyche-accent font-bold">{tone}</span>
+          <span className="text-sm px-3 py-1 rounded-md bg-accent/20 text-accent font-bold">{tone}</span>
         </div>
-        <p className="text-xl mb-6 italic text-psyche-ivory font-medium">"<span className="text-psyche-gold">{query}</span>"</p>
+        <p className="text-xl mb-6 italic text-foreground font-medium">"<span className="text-psyche-gold">{query}</span>"</p>
       </div>
       
       <div className={cn(
@@ -48,8 +48,8 @@ const PromptSimulation: React.FC<PromptSimulationProps> = ({
       )}>
         <div className="min-h-0 overflow-hidden">
           {responses.map((item, index) => (
-            <div key={index} className="mb-5 border-l-4 border-psyche-accent/70 pl-4">
-              <span className="text-sm uppercase tracking-wider text-psyche-accent block mb-2 font-bold">
+            <div key={index} className="mb-5 border-l-4 border-accent/70 pl-4">
+              <span className="text-sm uppercase tracking-wider text-accent block mb-2 font-bold">
                 {item.service}
               </span>
               <p className="text-lg font-medium">{item.response}</p>

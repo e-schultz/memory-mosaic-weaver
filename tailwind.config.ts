@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,57 +19,57 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				border: 'var(--border)',
+				input: 'var(--input)',
+				ring: 'var(--ring)',
+				background: 'var(--background)',
+				foreground: 'var(--foreground)',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: 'var(--primary)',
+					foreground: 'var(--primary-foreground)'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: 'var(--secondary)',
+					foreground: 'var(--secondary-foreground)'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: 'var(--destructive)',
+					foreground: 'var(--destructive-foreground)'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: 'var(--muted)',
+					foreground: 'var(--muted-foreground)'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: 'var(--accent)',
+					foreground: 'var(--accent-foreground)'
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: 'var(--popover)',
+					foreground: 'var(--popover-foreground)'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: 'var(--card)',
+					foreground: 'var(--card-foreground)'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: 'var(--sidebar-background)',
+					foreground: 'var(--sidebar-foreground)',
+					primary: 'var(--sidebar-primary)',
+					'primary-foreground': 'var(--sidebar-primary-foreground)',
+					accent: 'var(--sidebar-accent)',
+					'accent-foreground': 'var(--sidebar-accent-foreground)',
+					border: 'var(--sidebar-border)',
+					ring: 'var(--sidebar-ring)'
 				},
 				psyche: {
-					dark: '#0A0E1A',
-					medium: '#151F30',
-					light: '#2A3950',
-					accent: '#FF385C',
-					mute: '#B8C7E0',  // Lightened from previous value
-					gold: '#FFD700',  // Brighter gold
-					ivory: '#FFFFFF'
+					dark: 'var(--psyche-dark)',
+					medium: 'var(--psyche-medium)',
+					light: 'var(--psyche-light)',
+					accent: 'var(--psyche-accent)',
+					mute: 'var(--psyche-mute)',
+					gold: 'var(--psyche-gold)',
+					ivory: 'var(--psyche-ivory)'
 				}
 			},
 			borderRadius: {
@@ -127,19 +126,19 @@ export default {
 						color: 'inherit',
 						a: {
 							color: 'inherit',
-							opacity: 0.9,  // Increased from 0.75
-							fontWeight: '600',  // Increased from 500
+							opacity: 0.9,
+							fontWeight: '600',
 							textDecoration: 'underline',
 							'&:hover': {
 								opacity: 1,
-								color: '#FF385C',
+								color: 'var(--psyche-accent)',
 							},
 						},
 						'[class~="lead"]': {
 							color: 'inherit',
 						},
 						code: {
-							color: '#FF385C',
+							color: 'var(--psyche-accent)',
 						},
 						'blockquote p:first-of-type::before': { content: 'none' },
 						'blockquote p:last-of-type::after': { content: 'none' },

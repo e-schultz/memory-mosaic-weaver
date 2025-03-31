@@ -66,7 +66,7 @@ export default {
 					dark: 'hsl(var(--psyche-dark) / <alpha-value>)',
 					medium: 'hsl(var(--psyche-medium) / <alpha-value>)',
 					light: 'hsl(var(--psyche-light) / <alpha-value>)',
-					accent: 'hsl(var(--psyche-accent) / <alpha-value>)',
+					accent: 'hsl(var(--accent) / <alpha-value>)',
 					mute: 'hsl(var(--psyche-mute) / <alpha-value>)',
 					gold: 'hsl(var(--psyche-gold) / <alpha-value>)',
 					ivory: 'hsl(var(--psyche-ivory) / <alpha-value>)'
